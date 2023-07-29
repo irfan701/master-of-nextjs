@@ -4,7 +4,7 @@ const Student = ({params}) => {
     return (
         <div>
             <h3>Student Details</h3>
-            {params.student}
+           <h3>Student ID:{params.student} </h3>
         </div>
     );
 };

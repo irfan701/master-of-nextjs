@@ -4,6 +4,7 @@ import Link from "next/link";
 const StudentList = () => {
     return (
         <div>
+            <h2>Student List(Dynamic Routing)</h2>
             <ul>
                 <li>
                     <Link href='/studentlist/1'>Jenny</Link>
