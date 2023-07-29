@@ -6,10 +6,12 @@ const About = () => {
         <div>
             <h2>About</h2>
 
-            <a href="/about">ABOUT</a>
-            <a href="/contact">CONTACT</a>
+            <a href="/about">About</a>
             <br/>
+            <a href="/contact">Contact</a>
+            <br/><br/>
             <Link href='/about'>About</Link>
+            <br/>
             <Link href='/contact'>Contact</Link>
         </div>
     );
