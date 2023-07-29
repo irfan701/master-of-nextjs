@@ -1,23 +1,23 @@
-"use client"
-import React, {useEffect, useState} from 'react';
 
-const ProductList = () => {
+async function productList(){
+    let data = await fetch('https://dummyjson.com/products')
+    data = await data.json()
+    return data.products
+}
 
-    const [product, setProduct] = useState([])
 
-    useEffect(async () => {
-        let data = await fetch('https://dummyjson.com/products')
-        data = await data.json()
-        console.log(data)
-        setProduct(data.products)
+const ProductListServer = async () => {
 
-    }, [])
+    let products=await productList();
+    console.log(products)
 
-    let pro = product.map((item) => {
-        return `<tr>
+    let pro = products.map((item) => {
+        return `<div>
+<tr>
                     <td>${item.title}</td>
                     <td>${item.price}</td>
-</tr>`
+</tr>
+</div>`
     })
 
     return (
@@ -32,4 +32,4 @@ const ProductList = () => {
     );
 };
 
-export default ProductList;
+export default ProductListServer;
