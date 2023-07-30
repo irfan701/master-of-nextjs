@@ -1,20 +1,12 @@
-import {allowedDisplayValues} from "next/dist/compiled/@next/font/dist/constants";
+'use client'
+import Script from "next/script";
 
-async function userList(){
-   let data=await fetch('https://dummyjson.com/users')
-        data=await data.json()
-    return data.users;
-}
-
-const Page =async () => {
-    let users=await userList();
-    console.log(users)
+const Page = () => {
     return (
         <div>
-            <h2>User Name List</h2>
-            {users.map((item,i)=>{
-                return <div key={i}><h4>User Name: {item.firstName}</h4></div>
-            })}
+
+<Script src='/location.js' onLoad={()=>console.log('file loaded')}></Script>
+            <h2>Geolocation API</h2>
         </div>
     );
 };
