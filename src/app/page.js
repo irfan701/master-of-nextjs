@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
 
-        <Link href='/users'>Get Location</Link> <br/>
+        <Link href='/users'>Get Users with SSG</Link> <br/>
     </main>
   )
 }
