@@ -8,7 +8,8 @@ export default function Home() {
      <h2>Fetch Data With Api in client component</h2>
 
         <Link href='/productlist'>Go to Product List[client]</Link><br/>
-        <Link href='/productlistserver'>Go to Product List[server]</Link>
+        <Link href='/productlistserver'>Go to Product List[server]</Link> <br/>
+        <Link href='/clientwithserver'>Go to Product List[Client With server]</Link> <br/>
 
 
     </main>
