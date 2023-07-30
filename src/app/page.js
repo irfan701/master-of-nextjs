@@ -1,17 +1,13 @@
 'use client'
-
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
-     <h2>Fetch Data With Api in client component</h2>
-
-        <Link href='/productlist'>Go to Product List[client]</Link><br/>
-        <Link href='/productlistserver'>Go to Product List[server]</Link> <br/>
-        <Link href='/clientwithserver'>Go to Product List[Client With server]</Link> <br/>
-
-
+     <h2>Image & Font Optimization, Loading, 404 Page</h2>
+        <Link href='/image'>Go to Image Optimization</Link><br/>
+        {/*<Link href='/clientwithserver'>Go to Loading</Link> <br/>*/}
+        {/*<Link href='/clientwithserver'>404 Page</Link> <br/>*/}
     </main>
   )
 }
