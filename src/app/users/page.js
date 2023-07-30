@@ -12,8 +12,8 @@ const Page =async () => {
     return (
         <div>
             <h2>User Name List</h2>
-            {users.map((item)=>{
-                <div><h2>User Name: {item.firstName}</h2></div>
+            {users.map((item,i)=>{
+                return <div key={i}><h4>User Name: {item.firstName}</h4></div>
             })}
         </div>
     );
